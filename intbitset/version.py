@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of intbitset
-# Copyright (C) 2013, 2014, 2015 CERN.
+# Copyright (C) 2015 CERN.
 #
 # intbitset is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
@@ -21,38 +21,9 @@
 # granted to it by virtue of its status as an Intergovernmental Organization
 # or submit itself to any jurisdiction.
 
-sudo: false
+"""Version information for intbitset."""
 
-language: python
+# Do not change the format of this next line. Doing so risks breaking
+# setup.py and docs/conf.py
 
-python:
-  - "2.6"
-  - "2.7"
-  - "3.3"
-  - "3.4"
-
-install:
-  - pip install --upgrade pip
-  - pip install cython nose check-manifest
-  - pip install coveralls
-  - pip install .
-
-script:
-  - check-manifest
-  - coverage run --source=intbitset setup.py test
-
-after_success:
-  - coveralls
-
-notifications:
-  email: false
-
-deploy:
-  provider: pypi
-  user: samuele.kaplun
-  password:
-    secure: gNwbGQxvADImaBsqgyQG0Vc5o6+KtQUnLkZXmWmOgnieqD0NwCqTg4uvKWuihIzCIzcZf4wEx8Sv1qCfadfl1LPo0dp1GAA0c70Gcs2IaTxo8uULG33fgL0TF8Y78oDIl0R1YNfuyiDtI7dYC/HiuXuom7EMQ1ImKGDN+tGz6ag=
-  on:
-    tags: true
-    repo: inveniosoftware/intbitset
-
+__version__ = "2.2.2.dev20160104"

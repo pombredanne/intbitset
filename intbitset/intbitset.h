@@ -1,7 +1,7 @@
 // $Id$
 
 // This file is part of Invenio.
-// Copyright (C) 2007, 2008, 2009, 2010, 2011 CERN.
+// Copyright (C) 2007, 2008, 2009, 2010, 2011, 2014, 2015 CERN.
 //
 // Invenio is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License as
@@ -26,6 +26,11 @@
 #ifndef PY_SSIZE_T_CLEAN
 typedef int Py_ssize_t;
 #endif
+#endif
+
+// Fake declarations: do not call them!
+#if PY_VERSION_HEX >= 0x03000000
+PyObject* PyString_FromStringAndSize(const char *v, Py_ssize_t len);
 #endif
 
 typedef unsigned long long int word_t;
