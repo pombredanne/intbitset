@@ -1,9 +1,9 @@
 Authors
 -------
 
-IntbitSet is developed for use in `Invenio <http://invenio-software.org>`_ digital library software.
+IntbitSet is developed for use in `Invenio <http://inveniosoftware.org>`_ digital library software.
 
-Contact us at `info@invenio-software.org <mailto:info@invenio-software.org>`_
+Contact us at `info@inveniosoftware.org <mailto:info@inveniosoftware.org>`_
 
 Contributors
 ^^^^^^^^^^^^
@@ -12,5 +12,6 @@ Contributors
 * Lars Holm Nielsen <lars.holm.nielsen@cern.ch>
 * Marco Neumann <marco@crepererum.net>
 * Nikola Yolov <nikola.yolov@cern.ch>
+* Philippe Ombredanne <pombredanne@gmail.com>
 * Samuele Kaplun <samuele.kaplun@cern.ch>
 * Tibor Simko <tibor.simko@cern.ch>
